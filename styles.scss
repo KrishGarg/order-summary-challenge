@@ -1,5 +1,6 @@
 $paleBlue: hsl(225, 100%, 94%);
-$brightBlue: hsl(245, 75%, 70%);
+$brightBlue: hsl(245, 75%, 52%);
+$lighterBrightBlue: hsl(245, 75%, 70%);
 $veryPaleBlue: hsl(225, 100%, 98%);
 $desaturatedBlue: hsl(224, 23%, 55%);
 $darkBlue: hsl(223, 47%, 23%);
@@ -57,10 +58,11 @@ html {
 
       .desc {
         font-size: 0.95rem;
-        width: 75%;
+        width: 80%;
         padding: 0.5rem;
-        color: rgba(0, 0, 0, 0.6);
+        color: rgba(0, 0, 0, 0.5);
         text-shadow: 1px 1px 5px none;
+        text-align: center;
       }
 
       .plan-card {
@@ -76,10 +78,12 @@ html {
         background-color: $veryPaleBlue;
 
         .change a {
-          font-size: 0.92rem;
+          font-size: 0.8rem;
+          color: $darkBlue;
+          font-weight: bold;
 
           &:hover {
-            color: $brightBlue;
+            color: $lighterBrightBlue;
           }
         }
 
@@ -106,7 +110,7 @@ html {
 
               .plan-name {
                 font-weight: bold;
-                margin-bottom: 0.2rem;
+                margin-bottom: 0.3rem;
               }
 
               .price {
@@ -118,16 +122,42 @@ html {
           }
         }
       }
+      .btn {
+        width: 80%;
+        margin: 0.5rem 0;
+        height: 2.5rem;
+        color: white;
+        background-color: $brightBlue;
+        border-radius: 0.3rem;
+        box-shadow: 0px 1rem 1rem -0.8rem blue;
+        outline: none;
+        border: none;
+        transition: background-color 200ms;
+        font-weight: bold;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $lighterBrightBlue;
+        }
+      }
+      .cancel-order {
+        margin: 1rem 0;
+        color: rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
     }
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 385px) {
   html {
     background-image: url(images/pattern-background-mobile.svg);
   }
-  .card {
-    width: 90vw;
+  .container .card .main .plan-card {
+    width: 95%;
+    padding: 0.5rem;
   }
 }
 

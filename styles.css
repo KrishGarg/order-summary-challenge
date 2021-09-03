@@ -74,10 +74,11 @@ html {
 
 .container .card .main .desc {
   font-size: 0.95rem;
-  width: 75%;
+  width: 80%;
   padding: 0.5rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 5px none;
+  text-align: center;
 }
 
 .container .card .main .plan-card {
@@ -100,7 +101,9 @@ html {
 }
 
 .container .card .main .plan-card .change a {
-  font-size: 0.92rem;
+  font-size: 0.8rem;
+  color: #1f2f56;
+  font-weight: bold;
 }
 
 .container .card .main .plan-card .change a:hover {
@@ -157,7 +160,7 @@ html {
 
 .container .card .main .plan-card .plan .plan-thumb .plan-thumb-text .plan-name {
   font-weight: bold;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 
 .container .card .main .plan-card .plan .plan-thumb .plan-thumb-text .price {
@@ -166,12 +169,42 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
-@media (max-width: 375px) {
+.container .card .main .btn {
+  width: 80%;
+  margin: 0.5rem 0;
+  height: 2.5rem;
+  color: white;
+  background-color: #3829e0;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0px 1rem 1rem -0.8rem blue;
+          box-shadow: 0px 1rem 1rem -0.8rem blue;
+  outline: none;
+  border: none;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  font-weight: bold;
+}
+
+.container .card .main .btn:hover {
+  cursor: pointer;
+  background-color: #8379ec;
+}
+
+.container .card .main .cancel-order {
+  margin: 1rem 0;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media (max-width: 385px) {
   html {
     background-image: url(images/pattern-background-mobile.svg);
   }
-  .card {
-    width: 90vw;
+  .container .card .main .plan-card {
+    width: 95%;
+    padding: 0.5rem;
   }
 }
 
