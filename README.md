@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/order-summary-layout-with-html-scss-2IyQdOmS9)
+- Live Site URL: [Live Site](https://krishgarg.github.io/order-summary-challenge/)
 
 ## My process
 
